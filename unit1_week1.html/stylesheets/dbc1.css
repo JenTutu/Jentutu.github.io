@@ -1,0 +1,23 @@
+p {
+	color: black;
+	background-color: yellow;
+	font-family: Arial, sans-serif;
+}
+
+body {
+  color: white;
+  background: #420600 url('img/bg-texture.jpg') repeat;
+  font-family: Arial, sans-serif;
+}
+
+#first {
+	color: rgb(0,0,0);
+}
+
+.abroad {
+	background-color: black;
+}
+
+.domestic {
+	background-color: red;
+}
