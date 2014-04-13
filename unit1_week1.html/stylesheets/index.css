@@ -1,0 +1,86 @@
+html {
+	font-family: 'Lato', sans-serif; 
+}
+nav {
+	text-align: center;
+	font-size: 45px;
+	color: black;
+	width: -936px;
+	word-spacing: 20px;
+}
+a:link {color: black;
+text-decoration:none;} /*text-decoration: none or underline will take the 
+underline away from the links in all states. From w3 "The text-decoration property 
+is mostly used to remove underlines from links"*/
+a:visited {color: #C70A5F;
+	text-decoration:none;}
+a:hover {color: #E2E838;
+	text-decoration:underline;}
+a:active {color: #31A112;
+	text-decoration:underline;}
+#name {
+	font-family: 'Allura', cursive; 
+	font-size: 43px;
+
+	}
+.lines {
+	height: 100px; 
+}
+
+.About {
+	text-align: center;
+	width: 406.5px;
+	height: 40px;
+	padding: 10 20 10 20;
+	margin-top: 10;
+	margin-bottom: 10;
+	border: 0;
+
+}
+
+#education {
+	font-size: 23px;
+}
+#portrait {
+	width: 100;
+	max-width: 1000px;
+	position: absolute;
+	margin: -530px;
+	padding: 640px;
+	top: 0px;
+	bottom: 0px;
+}
+#Portfolio {
+	width: 1280px;
+	height: 180px;
+	position: relative;
+	clear: both;
+	padding: 640px;
+	margin: -530px;
+}
+
+/*#dbc1_text {
+width: 300px;
+height: 300px;
+}
+#dbc2_text {
+width: 300px;
+height: 300px;
+}
+#dbc3_text {
+width: 300px;
+height: 300px;
+}
+*/
+
+.CONTACT{
+	clear: both;
+	text-align: center;
+	font-size: 33px;
+}
+
+img{
+	width: 300px;
+	height: 300px;
+
+}
