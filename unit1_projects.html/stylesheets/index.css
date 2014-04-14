@@ -48,13 +48,9 @@ a:active {color: #31A112;
 	top: 0px;
 	bottom: 0px;
 }
-#Portfolio {
-	width: 1280px;
-	height: 180px;
-	position: relative;
+.Portfolio {
 	clear: both;
-	padding: 640px;
-	margin: -530px;
+	text-align: center;
 }
 
 /*#dbc1_text {
@@ -100,3 +96,4 @@ height: 300px;
 @media (max-width: 600px)
 @media (max-width: 768px)
 @media (min-width: 900px)
+
