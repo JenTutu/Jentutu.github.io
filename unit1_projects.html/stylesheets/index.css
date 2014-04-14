@@ -41,12 +41,10 @@ a:active {color: #31A112;
 #education {
 	font-size: 23px;
 }
-#portrait {
-	width: 100;
-	max-width: 1000px;
-	position: absolute;
-	margin: -530px;
-	padding: 640px;
+#Portrait {
+	width: 100%;
+	height: auto;
+	padding: 0px;
 	top: 0px;
 	bottom: 0px;
 }
@@ -79,8 +77,26 @@ height: 300px;
 	font-size: 33px;
 }
 
-img{
+#linkedin {
 	width: 300px;
 	height: 300px;
 
 }
+
+#github {
+	width: 300px;
+	height: 300px;
+
+}
+
+#gmail {
+	width: 300px;
+	height: 300px;
+
+}
+
+@media (max-width: 320px)
+@media (max-width: 480px)
+@media (max-width: 600px)
+@media (max-width: 768px)
+@media (min-width: 900px)
