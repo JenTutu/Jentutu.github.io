@@ -43,16 +43,52 @@ a:active {color: #31A112;
 }
 #Portrait {
 	width: 100%;
-	height: auto;
+	height: 500px;
 	padding: 0px;
 	top: 0px;
 	bottom: 0px;
 }
-.Portfolio {
+.PORTFOLIO {
 	clear: both;
 	text-align: center;
+	padding: 30px;
+	margin: 20px;
 }
 
+#dbc1 {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#solo {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#blog {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#wireframe {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#cultural {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
 /*#dbc1_text {
 width: 300px;
 height: 300px;
@@ -71,6 +107,8 @@ height: 300px;
 	clear: both;
 	text-align: center;
 	font-size: 33px;
+	margin-top: 20px;
+	padding: 10px;
 }
 
 #linkedin {
@@ -90,6 +128,7 @@ height: 300px;
 	height: 300px;
 
 }
+
 
 @media (max-width: 320px)
 @media (max-width: 480px)
