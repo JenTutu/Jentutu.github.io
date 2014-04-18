@@ -5,9 +5,23 @@
 	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="unit1_projects.html/class1/practice/stylesheets/reset.css">
-<link rel="stylesheet" type="text/css" href="unit1_projects.html/stylesheets/index.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
 </head>
+<script language="JavaScript">
+function bigImg(x)
+{
+x.style.height="64px"; //The .style.property syntax allows you to change HTML elements(are there built in properties 
+	//in JavaScript? Because how does it know that height is a property of x?)
+x.style.width="64px";
+}
+
+function normalImg(x)
+{
+x.style.height="32px";
+x.style.width="32px";
+}
+</script>
 <nav> 
 <a id="navabout" href="#">ABOUT</a>
 <a id="navdbc" href="#PORTFOLIO">DBC Portfolio</a>
@@ -17,10 +31,10 @@
 <body>
 Hello DBC!
 <div>
-<img id="Portrait" src="unit1_projects.html/images/JenniferPortrait-001.jpg"></div>
+<img id="Portrait" src="images/JenniferPortrait-001.jpg"></div>
 <div class="PORTFOLIO" name="PORTFOLIO">
 
-<a href="dbc1.html" id="dbc1">DBC1</a>
+<a href="dbc1.html" id="dbc1" onmouseover="bigImg('dbc1');">  name="dbc1" DBC1</a>
 <a href="dbc2.html" id="solo">Solo Challenge</a>
 <a href="http://jennieo23.github.io/unit1_projects.html/blog_post.html" id="blog">Blog Posts</a>
 <a href="http://jennieo23.github.io/unit1_projects.html/wireframe_sites.html" id="wireframe">Wireframes</a>
@@ -29,9 +43,9 @@ Hello DBC!
 </div>
 <div class="CONTACT" name="CONTACT"> 
 	<p id="CONTACT"> CONTACT </p>
-<a href="mailto:JennieO23@gmail.com"><img id="gmail" src="unit1_projects.html/images/Gmail_Icon.png"></a>
-<a href="http://www.linkedin.com/in/jenniferoseitutu/"><img id="linkedin"src="unit1_projects.html/images/linkedin-logo-square2-webtreatsetc.png"></a>
-<a href="https://github.com/JennieO23"><img id="github" src="unit1_projects.html/images/femalecodertocat.png"></a>
+<a href="mailto:JennieO23@gmail.com"><img id="gmail" src="/images/Gmail_Icon.png"></a>
+<a href="http://www.linkedin.com/in/jenniferoseitutu/"><img id="/images/linkedin-logo-square2-webtreatsetc.png"></a>
+<a href="https://github.com/JennieO23"><img id="github" src="/images/femalecodertocat.png"></a>
  </div>
 
 </body>
