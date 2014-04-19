@@ -41,9 +41,20 @@ a:active {color: #31A112;
 #education {
 	font-size: 23px;
 }
-#Portrait {
-	width: 100%;
-	height: 500px;
+
+#header_image {
+ background-color: black;
+ width: 100%;
+ min-width: 100%;
+ min-height: 604px;
+text-align: center;
+}
+
+img#portrait {
+	width: 902px;
+	min-width: 902px;
+	height: 602px;
+	min-height: 602px;
 	padding: 0px;
 	top: 0px;
 	bottom: 0px;
