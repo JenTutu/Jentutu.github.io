@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<header> <h2>Blog 2: All About Padding, Border, &amp Margin</h2> </header>
-<link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+<header>  
+	<nav> 
+<a id="navabout" href="#">ABOUT</a>
+<a id="navdbc" href="#PORTFOLIO">DBC Portfolio</a>
+<a id="navcontact" href="#CONTACT">CONTACT</a>
+</nav>
+</header>
 <link rel="stylesheet" type="text/css" href="stylesheets/week2_technical.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-<title> Box Model </title>
+<title> Technical Blogs </title>
 </head>
 <body>
+	<img id="back" src="images/sunset.jpg">
+<div id="w3_content">
+<h2> Blog 3: Why is JavaScript so popular in Web Development?</h2>
+<img src="images/redesign_web.jpg" id="redesign_web">
+<p>There are severval reasons as to why Javascript has grown in popularity:</p>
+<ul>
+<li> Adds Interactivity: JS allows users to create dynamic user experiences. This is appealing as websites are created to target specific user groups. </li>
 
+<li>Fast: JS gets to the end user relatively fast. Since JS code is executed on the user's processor as opposed to the web server, the application is immediately responsive to user input. As an added benefit, this execution on the user's processor saves bandwitdh &amp limits strain on the web server. </li>
+
+<li> Easy to implement: Many believe that JS is relatively simple to learn &amp implement. Javascript is also versatile and can easily be inserted into any web page. </li>
+</ul>
+</div>
+<div id="w2_content">
+<h2>Blog 2: All About Padding, Border, &amp Margin</h2>
 	<div id="picture">
 	<img src="images/boxmodel.png">
 	</div>
 	<div id="content">
 	
-
-
 	<h3> Padding</h3>
 	<p> As part of the box model, the padding is defined as the space between the content and the border. There are a few ways to specify padding values within CSS:
 		<ul>
@@ -44,4 +63,6 @@
 	<h3> Margin </h3>
 	<p>The margin is the space directly outside the border. The margin effectively defines how other elements outside the border will relate to the "box" surrounding the content. It is transparent as it does not take on a background color. Similar to the padding, the values for the margin can be defined three different ways.</p>
 </body>
+</div>
+</div>
 </html>

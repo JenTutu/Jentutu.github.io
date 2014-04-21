@@ -1,0 +1,19 @@
+h2 {
+	text-decoration: underline;
+	font-family:  'Lato', sans-serif;
+
+}
+
+#w3_content {
+	float: right;
+}
+
+body {
+	padding: 20px;
+}
+#redesign_web {
+	width: 180px;
+	height: 203px;
+	text-align: center;
+	clear: both;
+}

@@ -1,15 +1,15 @@
 
 
 header {
-	float: right;
+	text-align: center;
 	font-size: 23px;
 	clear: both;
 }
 
 html {
 	font-family: 'Lato', sans-serif; 
-	background: url('unit1_projects.html/images/sunset.jpg') no-repeat fixed center center transparent;
-}
+	padding: 30px;
+	}
 
 #back {
 	width: 100%;
