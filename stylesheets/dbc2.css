@@ -2,7 +2,7 @@ html{
 	font-family: Verdana;
 	margin: 0;
 	padding: 0;
-	background-image: url('unit1_projects.html/images/stripe_tile.jpg');
+	background-image: url("images/stripe_tile.jpg");
 }
 header{
 	font-size: 85px;
@@ -33,6 +33,7 @@ a:active{
 #image1{
 	float: left;
 	margin: auto;
+	margin-bottom: 0px;
 	border-width: 7px;
 	border-style: solid;
 	border-color: black;
@@ -41,9 +42,11 @@ a:active{
 #image2{
 	float: left;
 	margin: auto;
+	margin-bottom: 0px;
 	border-width: 7px;
 	border-style: solid;
 	border-color: black;
+	border-left: none;
 }
 
 
