@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+
+<link href="//fonts.googleapis.com/css?family=Lato" media="screen" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+function bigImg(x)
+{
+x.style.height="64px"; //The .style.property syntax allows you to change HTML elements(are there built in properties 
+	//in JavaScript? Because how does it know that height is a property of x?)
+x.style.width="64px";
+}
+
+function normalImg(x)
+{
+x.style.height="32px";
+x.style.width="32px";
+}
+</script>
+</head>
+
+<nav> 
+<a id="navabout" href="#">ABOUT</a>
+<a id="navdbc" href="#PORTFOLIO">DBC Portfolio</a>
+<a id="navcontact" href="#CONTACT">CONTACT</a>
+</nav>
+
+
+<body>
+
+<div id="header_image">
+<img id="portrait" src="images/jennie_800_535_inner_glow.png">
+</div>
+
+<div class="PORTFOLIO" name="PORTFOLIO">
+
+<a href="dbc1.html" id="dbc1" onmouseover="bigImg('dbc1');" name="dbc1"> DBC1</a>
+<a href="dbc2.html" id="solo">Solo Challenge</a>
+<a href="blog_template.html" id="blog">Blog Posts</a> 
+<a href="http://jennieo23.github.io/unit1_projects.html/wireframe_sites.html" id="wireframe">Wireframes</a>
+<a href="cultural_template.html" id="cultural">Cultural Blog Posts</a>
+</div>
+</div>
+<div class="CONTACT" name="CONTACT"> 
+	<p id="CONTACT"> CONTACT </p>
+<a href="mailto:JennieO23@gmail.com"><img id="gmail" src="images/Gmail_Icon.png"></a>
+<a href="http://www.linkedin.com/in/jenniferoseitutu/"><img id="linkedin" src="images/linkedin-logo-square2-webtreatsetc.png"></a>
+<a href="https://github.com/JennieO23"><img id="github" src="images/femalecodertocat.png"></a>
+ </div>
+
+</body>
+<style type="text/css">
+html {
+	font-family: 'Lato', sans-serif; 
+}
+nav {
+	text-align: center;
+	font-size: 25px;
+	color: black;
+	width: -936px;
+	word-spacing: 20px;
+
+}
+a:link {color: black;
+text-decoration:none;} /*text-decoration: none or underline will take the 
+underline away from the links in all states. From w3 "The text-decoration property 
+is mostly used to remove underlines from links"*/
+a:visited {color: #C70A5F;
+	text-decoration:none;}
+	a:hover {color: #E2E838;
+	text-decoration:underline;}
+a:active {color: #31A112;
+	text-decoration:underline;}
+#name {
+	font-family: 'Allura', cursive; 
+	font-size: 43px;
+
+	}
+.lines {
+	height: 100px; 
+}
+
+.About {
+	text-align: center;
+	width: 406.5px;
+	height: 40px;
+	padding: 10 20 10 20;
+	margin-top: 10;
+	margin-bottom: 10;
+	border: 0;
+
+}
+
+#education {
+	font-size: 23px;
+}
+
+#header_image {
+ background-color: black;
+ width: 100%;
+ min-width: 100%;
+ min-height: 604px;
+ height: 604px;
+text-align: center;
+}
+
+img#portrait {
+	width: 902px;
+	min-width: 902px;
+	height: 602px;
+	min-height: 602px;
+	padding: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+.PORTFOLIO {
+	clear: both;
+	text-align: center;
+	padding: 30px;
+	margin: 20px;
+}
+
+#dbc1 {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#solo {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#blog {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#wireframe {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+
+#cultural {
+	border-radius: 50%;
+	border: dotted;
+	padding: 30px;
+	margin: 10px;
+}
+/*#dbc1_text {
+width: 300px;
+height: 300px;
+}
+#dbc2_text {
+width: 300px;
+height: 300px;
+}
+#dbc3_text {
+width: 300px;
+height: 300px;
+}
+*/
+
+.CONTACT{
+	clear: both;
+	text-align: center;
+	font-size: 33px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#linkedin {
+	width: 300px;
+	height: 300px;
+
+}
+
+#github {
+	width: 300px;
+	height: 300px;
+
+}
+
+#gmail {
+	width: 300px;
+	height: 300px;
+
+}
+
+
+@media (max-width: 320px)
+@media (max-width: 480px)
+@media (max-width: 600px)
+@media (max-width: 768px)
+@media (min-width: 900px)
+
+</style>
+</html>
+

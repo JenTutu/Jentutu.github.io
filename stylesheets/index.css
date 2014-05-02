@@ -3,25 +3,27 @@ html {
 }
 nav {
 	text-align: center;
-	font-size: 45px;
+	font-size: 35px;
 	color: black;
 	width: -936px;
-	word-spacing: 20px;
+	word-spacing: 40px;
+	font-family: 'Dosis', sans-serif;
 }
 a:link {color: black;
 text-decoration:none;} /*text-decoration: none or underline will take the 
 underline away from the links in all states. From w3 "The text-decoration property 
 is mostly used to remove underlines from links"*/
-a:visited {color: #C70A5F;
-	text-decoration:none;}
-a:hover {color: #E2E838;
-	text-decoration:underline;}
+a:visited{
+	color: black;
+}
+a:hover {text-decoration:underline;}
 a:active {color: #31A112;
 	text-decoration:underline;}
 #name {
-	font-family: 'Allura', cursive; 
+	font-family: 'Parisienne', cursive; 
 	font-size: 43px;
-
+	word-spacing: 10px;
+	float: left;
 	}
 .lines {
 	height: 100px; 
