@@ -26,3 +26,12 @@ a .link_box{
 	border-radius: 3px;
 	font-size: 16px;
 }
+
+.ruby{
+	background-color: #DEDCD1;
+	font-family: "Courier new",monospace;
+	font-weight: 550; 
+	border: 3px solid #D6D6D6;
+	padding: 5px;
+	width: 70%;
+}

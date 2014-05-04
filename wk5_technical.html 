@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+<head>
+<header>  
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <a id="name" href="#"> Jennifer Oseitutu</a>
+    <a id="navabout" href="#">Home</a>
+    <a id="navdbc" href="#Portfolio">Portfolio</a>
+  <a id="navcontact" href="#Contact">Contact</a>
+
+  </div>
+</nav>
+</header>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/week2_technical.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+<link href='http://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+<title> Ruby Classes</title>
+</head>
+<body>
+  <img class="back" src="images/sunset.jpg">
+  <h2>Blog 5: Ruby Classes</h2>
+<p>Since Ruby is an object oriented language, it is easy to turn real-world concepts such as people, tickets, &amp shapes etc. into Ruby objects; more specifically using ruby classes. Ruby classes are a way to model the real world within Ruby. Moreover, a class can be described as a concept wherein an object is a single thing based on that class. For example, say we want to model a square using ruby. We can create class Square and give that class a side length attribute, along with an area method.  In modeling a square, we are giving ruby the concept of a Square through our code in class Square, and when we create an instance of Square, we are creating a specific type of square, based on that class. We implement this like so:
+</p>
+<div class="ruby">
+class Square <br>
+  &nbsp;def initialize(side_length) <br>
+    &nbsp;&nbsp;@side_length = side_length <br>
+  &nbsp;end <br>
+  &nbsp;def area <br>
+    &nbsp;&nbsp;@side_length * @side_length <br>
+  &nbsp;end <br>
+end <br>
+</div>
+<br>
+<br>
+<p>Now I can create a specific square, with a unique side length and call the area method defined by the class Square.
+</p>
+<div class="ruby">
+  Note: => displays the output of the code on the line above it. <br>
+new_square=Square.new(10) <br>
+=> # Square:0x007f9a9a2352f8 @side_length=10 <br> 
+new_square.area <br>
+=> 100  <br>
+</div>
+<br>
+<br>
+<p>In essence, we define a class whenever we want to model a concept and create objects from that concept, within Ruby. </p>
+
+<h3> Review:</h3> 
+<p>We started by creating a class called Square: class names are always capitalized
+We then defined intialize: This is a special method that is executed when you create 
+a new instance of that class using new.
+For instance, when we later created new_square=Square.new(10), we were effectively calling initialize upon the object. <br>
+In this case, our initialize method accepts one attribute, the argument side_length: in our example, we made side length equal to 10. 
+You may have wondered why we made @side_length=side_length. This has to do with scope, which we will cover in depth later on. For now, know that this code allows the side_length value passed to initialize to be accessible to the other methods within the class Square.  
+</p>
+
+<p>
+Lastly, we defined a method called area which will give us the area of the square when called. You'll see that we use @side_length to create this method; again this is because we made the value of side_length accessible to area through @side_length. We otherwise would not able to access the value of side_length because of scope, and thus writing the method area would prove  useless since we could not use the given value to provide an output. 
+</p>
+
+<p> I've mentioned scope a few times throughout this explanation and think this is a good bit of information to end on. </p>
+
+<div id="var_types">
+  <ul>
+    <li>
+      Local Variables: Can only be used in the same place as it is defined
+    </li>
+    <li>
+      Globale Variables: Rarely used; are available from everywhere within an application, including inside classes and objects. Use $ notation to indicate a global variable. 
+    </li>
+    <li>
+      Object variables aka Instance Variables: These variables have scope within the current object; This means they can only act on the given object. For example, within the Square class, @side_length is an instance variable and can only act on instances of Square. Use @ otation to indicate an instance variable. 
+    </li>
+    <li>
+      Class Variables: These are used to store information relevant to all objects in a certain class. For example, we could use a class variable to store the number of squares created in the Square class. Use @@ notation otation to indicate a class variable. 
+
+    </li>
+  </ul>
+
+</div>
+
+<div class="sources">
+Sources: <br>
+Beginning Ruby, By: Peter Cooper 
+</div>
+</body>
+</html>
