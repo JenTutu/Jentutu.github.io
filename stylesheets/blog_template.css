@@ -36,3 +36,21 @@ a .link_box{
 	padding: 5px;
 	width: 70%;
 }
+
+.article_pics {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+#emphasize {
+	font-size: 40px;
+}
+
+a .small_links{
+text-decoration: underline;
+}
+
+a{
+	cursor: pointer;
+}
