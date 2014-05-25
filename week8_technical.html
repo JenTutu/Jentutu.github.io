@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<header>  
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <a id="name" href="#"> Jennifer Oseitutu</a>
+    <a id="navabout" href="#">Home</a>
+    <a id="navdbc" href="#Portfolio">Portfolio</a>
+	<a id="navcontact" href="#Contact">Contact</a>
+
+  </div>
+</nav>
+</header>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/week2_technical.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+<link href='http://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+
+<title> jQuery </title>
+</head>
+<body>
+<h2> (Week 8) What is jQuery?</h2>
+<div class="article_pics">
+<img src="images/jquery-logo.jpg">
+</div>
+<p> Good question! jQuery is a Javascript framework; in short, jQuery makes it easier to write Javascript. Thus, you can use jQuery to make your websites more interactive and even include animations!</p>
+
+<p> Many big name companies use jQuery for their own sites, including WordPress, IBM, and Twitter. Since jQuery allows you to add functionality to your website, you can add features such as the ability to load new information without having to refresh the page. In fact, Twitter uses this feature when a new tweet is added to your timeline. See:  </p>
+
+<h3> An Example:</h3>
+<p>I found the following example on <a href="http://www.jquerysample.com/#jQueryEffects"> jquerysample.com</a>. I like this exampleit because it demonstrates just how jQuery can add simple interactivity to a website. Click on the "Slide Toggle" button below to see just what I mean: 
+
+<input id="btnSlideToggle" value="Slide Toggle" type="button"> 
+</p>
+
+ <script src="jquery-1.11.1.min.js"></script>                	
+<script type="text/javascript">              	
+
+$('#btnSlideToggle').click(function() {
+    $('#slideMe').slideToggle('fast');
+});               
+</script>   
+
+                	
+<div id="slideMe" class="ruby">
+    This content will appear and disappear when the div is slid in and out.
+</div>
+<!-- One button for each slide command -->
+<p> For a more comprehensive overview of jQuery, please feel free to visit the following links. Enjoy!</p>
+<p class="source">Further Resources:</p>
+<a href="https://www.youtube.com/watch?v=mwVuURFNX0E">What is jQuery</a><br>
+<a href="https://www.youtube.com/watch?v=Hk5oXFtYLwE">jQuery For Absolute Beginners</a><br>
+</body>
+
+</html>
