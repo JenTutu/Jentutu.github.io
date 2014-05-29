@@ -143,7 +143,17 @@ height: 300px;
 
 }
 
+.division {
+	margin: 100px;
+}
 
+.carousel-caption h2{
+  font-family: 'Dosis'
+}
+
+.panel-body p{
+	text-align: center;
+}
 @media (max-width: 320px)
 @media (max-width: 480px)
 @media (max-width: 600px)
