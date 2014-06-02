@@ -62,11 +62,12 @@ img#portrait {
 	top: 0px;
 	bottom: 0px;
 }
-.PORTFOLIO {
+#Portfolio {
 	clear: both;
 	text-align: center;
-	padding: 30px;
-	margin: 20px;
+	font-size: 33px;
+	margin-top: 20px;
+	padding: 10px;
 }
 
 #dbc1 {
