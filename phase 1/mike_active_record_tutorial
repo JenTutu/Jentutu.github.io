@@ -1,0 +1,76 @@
+
+when doing a validation, prob want to do a .new first
+active record lets you call .errors to see what the error actually is
+creating an app with beer/heg/user <--stepped out not sure
+
+user:
+full_name
+time_stamps
+
+
+
+beers: 
+user_id
+keg_id 
+
+keg:
+Beer type
+
+rake -T shows the rake commands available
+
+ActiveRecord looks for a model named users if you say create_table users
+class CreateUsers < ActiveRecord::Migration
+
+	def change <-- auto-generated after you create a migration file
+		create_table :users do |t| 
+			t.string :full_name
+			t.timestamps 
+		end 
+	end 
+end 
+
+class CreateBeers < ActiveRecord::Migration
+	def change :beers do |t|
+		t.integer :user_id, :keg_id (or t.references; should only be used in a join table) 
+	end 
+end 
+
+class User < ActiveRecord::Base 
+validates_uniqueness_of :full_name
+
+has_many :beers
+has_many :kegs, through :beers
+
+end 
+
+
+class Beer < ActiveRecord::Base
+belongs_to :user
+belong_to :keg
+end 
+
+class Keg < ActiveRecord::Base
+has_many :beers
+has_many :alcoholics, through: :beers source: :user <--looks for belongs_to user in Beer model to then find user_id in the User model; double check 
+
+ask about add_column, so you can't add anything new to a migration file after its been run? 
+
+
+seeds.rb ------------------->
+travis = user.create(full_name: "Travis Hernandez") <--this is a hash (right full_name: "Travis Hernandez" is shorcut for :full_name => "Travis Hernandez")
+*depreacated: once something is deprecated it won't actually function
+
+miller_lite = Keg.create(beer_type: "Miller Lite")
+Beer.create(user_id: 1, keg_id:1) 
+#kegs is an array
+travis.kegs <--returns nothing since idk? this array represents kegs associated with travis. 
+so now do travis.kegs << miller_lite 
+then Beer.first see <Beer id:1, user_id: 1, keg_id: 1)
+want to know the beers associated with travis:
+travis.kegs.first (b/c know that we only added 1?)
+to find the Miller Lite beers associated with travis
+travis.kegs.where(beer_type: "Miller Lite")
+
+_-ActiveRecord::Base.methods in terminal (rake console?) to see what methods were added 
+(this shows all the methods for an instance of User, idk why; were they in the User class somehow?)
+.where returns an array
