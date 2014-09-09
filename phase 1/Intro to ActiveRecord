@@ -1,0 +1,84 @@
+Intro to ActiveRecord
+active record is a collection of commands
+its a gem used in rails for orm
+design patterns; codified ways of solving problems in specific situations
+
+it creates tables, (active record migrations)
+mapping classes and tables, attributes and fields 
+assoc. between classes
+validations
+
+migration (allows you to write ruby code that will produce sql, postgres, nosql, etc.)
+naming important in activerecord
+create a file ex; 20140618083700_create_schema.rb
+						hrminsec
+
+						the create_schema has to match the class CreateSchema exactly
+class CreateSchema < ActiveRecord::Migration
+	def change
+
+	create_table :users do |t| <-- create_table automatically generates an id column, you'd have to tell it if you don't want it
+	t.string :username null: false <-- means NOT NULL 
+	t.string :email
+	t.datetime :created_at
+	t.datetime :updated_at
+	end 
+
+	create_table :tweets do |t| <--tweets was the table name we used in sql
+	t.integer :user_id
+	t.string :content, length: 140
+	t.timestamps <--same as t.datetime :created_at 
+	end 
+
+migrations never get run again 
+	#W/in sql:
+#text can have variable length
+#strings have a limited amount of characters (i.e. twitter strings are 140 characters)
+
+terminal: rake -T gives a list of things you can do with a database
+schema: indexes, columns, 
+
+base
+
+
+mapping classes to tables:
+have a table called users, make the schema in ar class User
+class User << ActiveRecord::Migration
+rake console lets you? <----------------------------------------------
+
+ActveRecord::Relation 
+#we didn't ddesignate an id since it autoincrements
+#create (in sublime will)
+
+
+#User.all
+
+Looking at instances of a class
+-ar has reader and writers for every method
+
+
+ASsoc. bten classes
+	class User < ActiveRecord:Base
+		has many :tweets <--tweets is an instance of Tweet
+		error
+		end 
+
+		class Tweet <ActiveRecord:Base
+		belongs_to :user
+		end #*from here, tweet.user should create a user object
+Ar only loads an association once unless you tell it to reload 
+be comfortable creating objects through associations 
+
+Validations: prevent unwanted data being written to the database
+see edgeguides.rubyonrails.org
+class Tweet
+has_many 
+
+validates :username presence:true
+validates_presence_of :username 
+end 
+
+rollback transaction means the validation didn't work and couldn't save <--dc
+do u.errors to see why or do u = User.create! 
+
+dont store passwords in plain text

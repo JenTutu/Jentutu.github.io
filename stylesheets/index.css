@@ -1,5 +1,6 @@
 html {
-	font-family: 'Lato', sans-serif; 
+	/*font-family: 'Lato', sans-serif; */
+
 }
 nav {
 	text-align: center;
@@ -7,7 +8,31 @@ nav {
 	color: black;
 	width: -936px;
 	word-spacing: 40px;
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	background: #F4F2F7;
+	height: 80px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#profile{
+	margin-top: 40px;
+	margin-left: 100px;
+	font-family: 'Noto Sans', sans-serif;
+	/*font-weight: 400;*/
+}
+
+.italic{
+	font-style: italic;
+}
+.resume{
+	margin-left: 100px;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	margin-top: 10px; 
 }
 a:link {color: black;
 text-decoration:none;} /*text-decoration: none or underline will take the 
@@ -62,7 +87,7 @@ img#portrait {
 	top: 0px;
 	bottom: 0px;
 }
-#Portfolio {
+#works {
 	clear: both;
 	text-align: center;
 	font-size: 33px;
@@ -117,31 +142,46 @@ width: 300px;
 height: 300px;
 }
 */
-
+#myCarousel{
+	margin-bottom: 0px;
+	padding-bottom: 0px; 
+}
 .CONTACT{
-	clear: both;
+	/*clear: both;*/
 	text-align: center;
 	font-size: 33px;
-	margin-top: 20px;
-	padding: 10px;
+	margin-top: 0px;
+	/*padding: 10px;*/
+	background: #F5F5F5;
+	height: 160px;
+}
+#contact_1{
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 #linkedin {
-	width: 300px;
-	height: 300px;
-
+	width: 100px;
+	height: 100px;
+}
+#contact_2{
+	margin-left: 145px;
+	margin-right: 145px;
 }
 
 #github {
-	width: 300px;
-	height: 300px;
-
+	width: 100px;
+	height: 100px;
 }
-
+#contact_3{
+	margin-left: 140px;
+	margin-right: 25px;
+}
 #gmail {
-	width: 300px;
-	height: 300px;
-
+	width: 100px;
+	height: 100px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 .division {
@@ -152,9 +192,37 @@ height: 300px;
   font-family: 'Dosis'
 }
 
-.panel-body p{
-	text-align: center;
+
+.skill-rate-on{
+	display: table-cell;
+	background: #353535;
+	width: 62px;
+	height: 4px;
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
 }
+
+.skill-rate-off{
+	display: table-cell;
+	background: #DBD9DE;
+	width: 62px;
+	height: 4px;
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+}
+#avatar {
+	border: 4px solid black;
+}
+#first_hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+
 @media (max-width: 320px)
 @media (max-width: 480px)
 @media (max-width: 600px)
