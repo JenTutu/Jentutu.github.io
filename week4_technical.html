@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<header>  
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <a id="name" href="#"> Jennifer Oseitutu</a>
+    <a id="navabout" href="#">Home</a>
+    <a id="navdbc" href="#Portfolio">Portfolio</a>
+  <a id="navcontact" href="#Contact">Contact</a>
+
+  </div>
+</nav>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/week4_technical.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+<title> Arrays vs. Hashes </title>
+</head>
+<body> 
+		<img id="back" src="images/sunset.jpg">
+<div id="Array">
+<h2>Blog 4: Arrays vs. Hashes: What are they? What are they good for? </h2> 
+
+<h3>What is an Array?</h3>
+
+<p>
+An array is simply a list arrangement of objects with no restrictions on type. For instance an array that mixes Integers and Strings is perfectly valid (i.e. array=[1,'one',2,'two']) within Ruby. 
+</p>
+<p> Creating an array is fairly simple. You can build an array by placing a set of values within brackets[], i.e.:</p>
+<ul>
+<li class="ruby"> [1,2,3] </li>
+</ul>
+<p> More often than not, you will want to name the array so that you can access it later.</p>
+<ul>
+<li class="ruby"> named_array=[1,2,3] <br>
+<class="comments"> #name_of_array=[object1,object2]</li>
+</ul>
+</div>
+
+
+<div id="Hash">
+<h3>What is a Hash?</h3>
+<p> A hash, similar to an array, is simply a collection of objects in no particular order. </p>
+<p> Typically, hashes are used to represent items and their associated values. For instance, if I wanted to be able to access a list of books by author, I could do so like this: </p>
+<div class="ruby">
+<p> books = {} <br>
+	books[:matz]= "The Ruby Lang" <br>
+	books[:black] = "The Well-Grounded Rubyist" <br>
+	<class="comments"> #name of hash[:name of key]= "value" 
+</p>
+</div>
+	<p> This brings me to another point. How do you create a Hash? There are two ways:
+		<ul> Example 1: Using Hash Literal
+			<li class="ruby"> ages={"Genevieve Dior" => 24, "Naomi Cisse"=>26} <br>
+			 <class="comments"> #name of hash= {"key1"=> value1, "key2"=> value2} </li>
+		</ul>
+		<ul> Example 2: Using ::new method
+			<li class="ruby"> ages=Hash.new<br>
+			ages["Genevieve Dior"]=24 <br>
+			<class="comments">#name of hash["name of key"]=value </li>
+		</ul>
+	</p>
+	<p>When to Use an Array vs. a Hash</p>
+	<p>Not surprisingly, deciding when to use an Array over a Hash will be dependent on the situation. While both arrays and hashes are data structures, hashes are an excellent choice for when you want to displate items that are associated with one another. An example can be found in displaying menu items with their associated costs: 
+	</p>
+	
+	<div class="ruby">
+		<ul> Example 3: Menu Items &amp Prices 
+		restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 } <br>
+		restaurant_menu.each do | item, price | <br>
+		puts "#{item}: $#{price}"<br>
+		end <br>
+		<ul> => Dal Makhani: $4 <br>
+			Coffee: $2 <br>
+			Ramen: $3 <br>
+			</ul>
+		</ul>
+	</div>
+	<p> Since arrays are useful for storing one-dimensional data, they are useful for looking up data using an index. 
+		<ul class="ruby">
+			Example 4: An Array of a student group <br>
+studentArray = ["Ajay Bir Singh", "Jennifer Oseitutu", "Andrew Principe", "Joseph Rosztoczy"] 
+		</ul>
+	</p>
+</div>
+Sources: http://ruby.about.com/od/rubyfeatures/a/hashes.htm <br>
+http://www.ruby-doc.org/core-2.1.1/Hash.html (hash) <br>
+http://rubymonk.com/learning/books/1-ruby-primer/chapters/1-arrays/lessons/2-arrays-introduction <br>
+
+</body>
+</html>
