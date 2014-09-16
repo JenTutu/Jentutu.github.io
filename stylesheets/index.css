@@ -4,7 +4,7 @@ html {
 }
 nav {
 	text-align: center;
-	font-size: 35px;
+	font-size: 25px;
 	color: black;
 	width: -936px;
 	word-spacing: 40px;
@@ -16,12 +16,41 @@ nav {
 body {
 	font-family: 'Roboto', sans-serif;
 }
+#projects{
+	font-family: 'Noto Sans', sans-serif;
+	text-align: center;
+	/*display: block;*/
+	margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#divvy{
+
+    border: 4px solid black;
+}
+
+#divvylink {
+	color: blue;
+}
+#projects .caption {
+	margin: 30px 80px 80px 30px; 
+}
 
 #profile{
 	margin-top: 40px;
 	margin-left: 100px;
 	font-family: 'Noto Sans', sans-serif;
 	/*font-weight: 400;*/
+	
+}
+
+.profile_title{
+	text-align: center;
+/*	margin-left: -100px;
+	margin-bottom: 20px;*/
+	font-family: 'Parisienne', cursive;
+	font-size: 40px;
 }
 
 .italic{
@@ -50,9 +79,6 @@ a:active {color: #31A112;
 	word-spacing: 10px;
 	float: left;
 	}
-.lines {
-	height: 100px; 
-}
 
 .About {
 	text-align: center;
@@ -87,61 +113,8 @@ img#portrait {
 	top: 0px;
 	bottom: 0px;
 }
-#works {
-	clear: both;
-	text-align: center;
-	font-size: 33px;
-	margin-top: 20px;
-	padding: 10px;
-}
 
-#dbc1 {
-	border-radius: 50%;
-	border: dotted;
-	padding: 30px;
-	margin: 10px;
-}
 
-#solo {
-	border-radius: 50%;
-	border: dotted;
-	padding: 30px;
-	margin: 10px;
-}
-
-#blog {
-	border-radius: 50%;
-	border: dotted;
-	padding: 30px;
-	margin: 10px;
-}
-
-#wireframe {
-	border-radius: 50%;
-	border: dotted;
-	padding: 30px;
-	margin: 10px;
-}
-
-#cultural {
-	border-radius: 50%;
-	border: dotted;
-	padding: 30px;
-	margin: 10px;
-}
-/*#dbc1_text {
-width: 300px;
-height: 300px;
-}
-#dbc2_text {
-width: 300px;
-height: 300px;
-}
-#dbc3_text {
-width: 300px;
-height: 300px;
-}
-*/
 #myCarousel{
 	margin-bottom: 0px;
 	padding-bottom: 0px; 
@@ -154,6 +127,15 @@ height: 300px;
 	/*padding: 10px;*/
 	background: #F5F5F5;
 	height: 160px;
+}
+.CONTACT2{
+	/*clear: both;*/
+	/*text-align: center;*/
+	font-size: 12px;
+	margin-top: 20px;
+	/*padding: 10px;*/
+	background: #F5F5F5;
+	height: 140px;
 }
 #contact_1{
 	margin-left: 150px;
@@ -187,11 +169,6 @@ height: 300px;
 .division {
 	margin: 100px;
 }
-
-.carousel-caption h2{
-  font-family: 'Dosis'
-}
-
 
 .skill-rate-on{
 	display: table-cell;
