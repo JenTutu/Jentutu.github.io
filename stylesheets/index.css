@@ -1,7 +1,3 @@
-html {
-	/*font-family: 'Lato', sans-serif; */
-
-}
 nav {
 	text-align: center;
 	font-size: 25px;
@@ -13,9 +9,11 @@ nav {
 	background: #F4F2F7;
 	height: 80px;
 }
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
+
 #projects{
 	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
@@ -33,6 +31,7 @@ body {
 #divvylink {
 	color: blue;
 }
+
 #projects .caption {
 	margin: 30px 80px 80px 30px; 
 }
@@ -56,13 +55,16 @@ body {
 .italic{
 	font-style: italic;
 }
+
 .resume{
 	margin-left: 100px;
 	font-family: 'Roboto', sans-serif;
 }
+
 .container{
 	margin-top: 10px; 
 }
+
 a:link {color: black;
 text-decoration:none;} /*text-decoration: none or underline will take the 
 underline away from the links in all states. From w3 "The text-decoration property 
@@ -70,55 +72,30 @@ is mostly used to remove underlines from links"*/
 a:visited{
 	color: black;
 }
+
 a:hover {text-decoration:underline;}
-a:active {color: #31A112;
-	text-decoration:underline;}
+
+a:active {
+	color: #31A112;
+	text-decoration:underline;
+}
+
 #name {
 	font-family: 'Parisienne', cursive; 
 	font-size: 43px;
 	word-spacing: 10px;
 	float: left;
-	}
-
-.About {
-	text-align: center;
-	width: 406.5px;
-	height: 40px;
-	padding: 10 20 10 20;
-	margin-top: 10;
-	margin-bottom: 10;
-	border: 0;
-
 }
 
 #education {
 	font-size: 23px;
 }
 
-#header_image {
- background-color: black;
- width: 100%;
- min-width: 100%;
- min-height: 604px;
- height: 604px;
-text-align: center;
-}
-
-img#portrait {
-	width: 902px;
-	min-width: 902px;
-	height: 602px;
-	min-height: 602px;
-	padding: 0px;
-	top: 0px;
-	bottom: 0px;
-}
-
-
 #myCarousel{
 	margin-bottom: 0px;
 	padding-bottom: 0px; 
 }
+
 .CONTACT{
 	/*clear: both;*/
 	text-align: center;
@@ -128,6 +105,7 @@ img#portrait {
 	background: #F5F5F5;
 	height: 160px;
 }
+
 .CONTACT2{
 	/*clear: both;*/
 	/*text-align: center;*/
@@ -137,28 +115,35 @@ img#portrait {
 	background: #F5F5F5;
 	height: 140px;
 }
+
 #contact_1{
 	margin-left: 150px;
 	margin-right: 150px;
+	float: left;
 }
 
 #linkedin {
 	width: 100px;
-	height: 100px;
+	height: 100px; 
 }
+
 #contact_2{
 	margin-left: 145px;
 	margin-right: 145px;
+	float: left;
 }
 
 #github {
 	width: 100px;
 	height: 100px;
 }
+
 #contact_3{
 	margin-left: 140px;
 	margin-right: 25px;
+	float: left;
 }
+
 #gmail {
 	width: 100px;
 	height: 100px;
@@ -168,6 +153,12 @@ img#portrait {
 
 .division {
 	margin: 100px;
+}
+
+#skillset{
+	float: left; 
+	margin-left: 40px; 
+	margin-right: 40px;
 }
 
 .skill-rate-on{
@@ -187,9 +178,17 @@ img#portrait {
 	border-left: 2px solid #FFF;
 	border-right: 2px solid #FFF;
 }
+
+.profile_title{
+	margin-left: -100px;
+	margin-bottom: 20px;
+}
+
 #avatar {
 	border: 4px solid black;
+	float: left;
 }
+
 #first_hr {
     border: 0;
     height: 1px;
@@ -199,7 +198,32 @@ img#portrait {
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
+#summary{
+	float: left; 
+	width: 395px;
+}
 
+.hidden{
+	clear: both;
+}
+
+.category{
+	float: left;
+}
+
+.desc{
+	float: left; 
+	margin-left: 80px; 
+	height: 200px; 
+	width: 685px; 
+}
+
+.desc2{
+	float: left; 
+	margin-left: 90px; 
+	height: 200px; 
+	width: 685px;
+}
 @media (max-width: 320px)
 @media (max-width: 480px)
 @media (max-width: 600px)
