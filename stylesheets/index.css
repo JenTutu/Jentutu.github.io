@@ -1,31 +1,136 @@
-nav {
-	text-align: center;
-	font-size: 25px;
-	color: black;
-	width: -936px;
-	word-spacing: 40px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	background: #F4F2F7;
-	height: 80px;
-}
-
 body {
 	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 }
 
-#projects{
+h1, h2 {	
+	font-family: 'Parisienne', cursive;
+}
+
+h2 { font-size: 50px; }
+h3 { font-size: 21px; }
+
+.navbar-default {
+	font-size: 21px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+	padding: 0 28px;
+}
+
+.navbar-default h1 {
+	margin: 0;
+}
+
+.navbar-nav > li > a{
+	padding: 0 12px;
+	line-height: 67px;
+}
+
+.navbar-nav > li > a:hover {
+	text-decoration: underline;
+}
+
+header#hero {
+	background-image: url('../images/macbook.jpg');
+	background-size: 100%;
+	background-position: center 15%;
+	padding: 0;
+	margin: 0px;
+	height: 458px;
+}
+
+ul.contact{
+	background: #F5F5F5;
+	height: 111px;
+	line-height: 111px;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+ul.contact li {
+	display: inline-block;
+}
+
+ul.contact li img.icon {
+	width: 83px;
+	height: 83px;
+	margin: 0 67px;
+}
+
+body > section {
 	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
-	/*display: block;*/
-	margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+	padding: 12px 0;
 }
 
-#divvy{
+section#projects {
+	max-width: 100%;
+	margin: 0 auto;
+}
 
-    border: 4px solid black;
+img.screenshot {
+	width: 610px;
+	max-width: 100%;
+	border: 1px solid #333;
+}
+
+section#projects p {
+	margin: 0.8em 0;
+}
+
+section#profile {
+	background-color: #F5F5F5;
+}
+
+section#profile ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul#skillset li {
+	margin-bottom: 0.5em;
+}
+
+ul#skillset li strong {
+	display: block;
+}
+
+ul#other-skills li {
+	display: inline-block;
+	padding: 0 8px;
+}
+
+ul#other-skills li:hover {
+	color: red;
+}
+
+.skill {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.block {
+	width: 62px;
+	height: 4px;	
+	display: table-cell;
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+}
+
+.block.on  { background: #353535; }
+.block.off { background: #DBD9DE; }
+
+
+section#profile img {
+	width: 260px;
+	border: 1px solid #333;
+}
+
+section#profile h3 {
+	text-transform: uppercase;
 }
 
 #divvylink {
@@ -36,20 +141,12 @@ body {
 	margin: 30px 80px 80px 30px; 
 }
 
-#profile{
-	margin-top: 40px;
-	margin-left: 100px;
-	font-family: 'Noto Sans', sans-serif;
-	/*font-weight: 400;*/
-	
-}
-
 .profile_title{
 	text-align: center;
 /*	margin-left: -100px;
 	margin-bottom: 20px;*/
 	font-family: 'Parisienne', cursive;
-	font-size: 40px;
+	font-size: 37px;
 }
 
 .italic{
@@ -61,12 +158,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.container{
-	margin-top: 10px; 
-}
-
-a:link {color: black;
-text-decoration:none;} /*text-decoration: none or underline will take the 
+a:link {
+	color: black;
+	text-decoration:none;
+} /*text-decoration: none or underline will take the 
 underline away from the links in all states. From w3 "The text-decoration property 
 is mostly used to remove underlines from links"*/
 a:visited{
@@ -81,10 +176,9 @@ a:active {
 }
 
 #name {
+	line-height: 67px;
 	font-family: 'Parisienne', cursive; 
-	font-size: 43px;
-	word-spacing: 10px;
-	float: left;
+	font-size: 50px;
 }
 
 #education {
@@ -96,93 +190,11 @@ a:active {
 	padding-bottom: 0px; 
 }
 
-.CONTACT{
-	/*clear: both;*/
-	text-align: center;
-	font-size: 33px;
-	margin-top: 0px;
-	/*padding: 10px;*/
-	background: #F5F5F5;
-	height: 160px;
-}
-
-.CONTACT2{
-	/*clear: both;*/
-	/*text-align: center;*/
-	font-size: 12px;
-	margin-top: 20px;
-	/*padding: 10px;*/
-	background: #F5F5F5;
-	height: 140px;
-}
-
-#contact_1{
-	margin-left: 150px;
-	margin-right: 150px;
-	float: left;
-}
-
-#linkedin {
-	width: 100px;
-	height: 100px; 
-}
-
-#contact_2{
-	margin-left: 145px;
-	margin-right: 145px;
-	float: left;
-}
-
-#github {
-	width: 100px;
-	height: 100px;
-}
-
-#contact_3{
-	margin-left: 140px;
-	margin-right: 25px;
-	float: left;
-}
-
-#gmail {
-	width: 100px;
-	height: 100px;
-	margin-left: 25px;
-	margin-right: 25px;
-}
 
 .division {
 	margin: 100px;
 }
 
-#skillset{
-	float: left; 
-	margin-left: 40px; 
-	margin-right: 40px;
-}
-
-.skill-rate-on{
-	display: table-cell;
-	background: #353535;
-	width: 62px;
-	height: 4px;
-	border-left: 2px solid #FFF;
-	border-right: 2px solid #FFF;
-}
-
-.skill-rate-off{
-	display: table-cell;
-	background: #DBD9DE;
-	width: 62px;
-	height: 4px;
-	border-left: 2px solid #FFF;
-	border-right: 2px solid #FFF;
-}
-
-.profile_title{
-	margin-left: -100px;
-	margin-bottom: 20px;
-}
 
 #avatar {
 	border: 4px solid black;
@@ -198,10 +210,6 @@ a:active {
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
-#summary{
-	float: left; 
-	width: 395px;
-}
 
 .hidden{
 	clear: both;
@@ -211,12 +219,12 @@ a:active {
 	float: left;
 }
 
-.desc{
+/*.desc{
 	float: left; 
 	margin-left: 80px; 
 	height: 200px; 
 	width: 685px; 
-}
+}*/
 
 .desc2{
 	float: left; 
@@ -224,9 +232,39 @@ a:active {
 	height: 200px; 
 	width: 685px;
 }
-@media (max-width: 320px)
+/*@media (max-width: 320px)
 @media (max-width: 480px)
 @media (max-width: 600px)
 @media (max-width: 768px)
-@media (min-width: 900px)
+@media (min-width: 900px)*/
 
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	header#hero {
+		height: 196px;
+	}
+	ul.contact {
+		height: 83px;
+		line-height: 83px;
+	}
+	ul.contact li img.icon{
+		width: 67px;
+		height: 67px;
+		margin: 0 12px;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	#name {
+	line-height: 67px;
+	font-family: 'Parisienne', cursive; 
+	font-size: 37px;
+}
+ }
