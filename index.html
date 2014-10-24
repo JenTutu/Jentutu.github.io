@@ -4,189 +4,222 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-<!-- console.log("I made this thing from scratch" <- put this on the ) -->
-<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
-<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <a id="name" href="#"> Jennifer Oseitutu</a>
-    <a id="navabout" href="#">Home</a>
-    <a id="navdbc" href="#CONTACT">Projects</a>
-    <a id="navdbc" href="#caption">Profile</a>
-  	<a id="navcontact" href="#contact">Contact</a>
-  </div>
-</nav>
-<header class="masthead">
-  <div class="carousel-inner">
-    <div>
-      <img src="images/macbook.jpg" width="100%" height="570">
-    </div>
-  </div>  
+  <![endif]-->
+  <!-- console.log("I made this thing from scratch" <- put this on the ) -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-<div class="CONTACT" id="CONTACT"> 
-  <div id="contact_1"> 
-    <a href="mailto:JennieO23@gmail.com"><img id="gmail" src="images/Gmail_Icon.png"></a>
-  </div>
-  <div id="contact_2">
-    <a href="http://www.linkedin.com/in/jenniferoseitutu/"><img id="linkedin" src="images/linkedin-logo-square2-webtreatsetc.png"></a>
-  </div>
-  <div id="contact_3">
-    <a href="https://github.com/JenTutu"><img id="github" src="images/Octocat.png"></a>
-  </div>
-</div>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h1>
+          <a id="name" class='brand' href="#"> Jennifer Oseitutu</a>
+        </h1>
+      </div>
 
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" role="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#caption">Profile</a></li>
+      	<li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <div id="projects">
-    <h3 class="profile_title">Projects</h3>
-    <a href="https://divvyuptours.herokuapp.com/" target="_blank"><img id="divvy" src="images/DivvyTourMap.png" height="354" width="508"></a>
-    <div class="caption" id="caption">
-          <p>As part of an 8-day project at Dev Bootcamp, I worked on third party integration for a real-time web app service called <a href="https://divvyuptours.herokuapp.com/" target="_blank" id="divvylink">DivvyUpTours</a>. DivvyUpTours is a Rails and JavaScript web app that lets users combine the adventure of a Divvy bike ride with sightseeing in Chicago. Using an API of the Divvy API, I was able to integrate real-time information on the nearest Divvy bike stations, along with the number of available bikes and bike docks. 
-          </p>
-    </div>
-  </div>
-  <div id="profile"> 
-    <div>
-      <h3 class="profile_title">Profile</h3>
-    <div id="avatar">
-      <!-- my picture, skills, profile summary -->
-      <img src="images/JenniferPortrait-001.jpg" height="262.5" width="357">
-    </div>
+  <header id="hero" class="jumbotron">
+  </header>
 
-    <div id="skillset">
-      <h3>SKILLSET</h3> 
-      <h5> Ruby on Rails</h5> 
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-off"></div>
-      <h5> HTML5/CSS3</h5> 
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-off"></div>
-      <h5> Javascript/jQuery/AJAX</h5> 
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-on"></div>
-      <div class="skill-rate-off"></div>
-      <div class="skill-rate-off"></div> 
-      <h3>OTHER SKILLS</h3>
-      <h5> APIs | ActiveRecord | SQL | Postgres |<br> Rspec |  Sinatra | Agile Web Development | <br> Git/Github | Jasmine | Capybara </h5>    
-    </div>
-    <div id="summary">
-      <h3>ABOUT</h3>
-      <p> I like to work on software projects that have a consumer focus, especially those that focus on underserved consumer markets. Having a background in market research, I'm interested in creating software that users find useful &amp enjoy using. 
+  <ul class="contact"> 
+    <li id="gmail"> 
+      <a href="mailto:JennieO23@gmail.com">
+        <img class="icon" src="images/Gmail_Icon.png">
+      </a>
+    </li>
+    <li id="linkedin">
+      <a href="http://www.linkedin.com/in/jenniferoseitutu/">
+        <img class="icon" src="images/linkedin-logo-square2-webtreatsetc.png">
+      </a>
+    </li>
+    <li id="github">
+      <a href="https://github.com/JenTutu">
+        <img class="icon" src="images/Octocat.png">
+      </a>
+    </li>
+  </ul>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <a id="divvy" href="https://divvyuptours.herokuapp.com/" target="_blank">
+        <img class="screenshot" src="images/DivvyTourMap.png">
+      </a>
+      <h3>DivvyUp</h3>
+      <p>
+        As part of an 8-day project at Dev Bootcamp, I worked on third party integration for a real-time web app service called <a href="https://divvyuptours.herokuapp.com/" target="_blank" id="divvylink">DivvyUpTours</a>.
       </p>
-      <p>I am currently open to positions as a junior developer.</p>
-    </div>
-    </div>
-  </div>
-  <div style="clear: both;"></div>
-  <br>
- <br>
- <br>
- <br>
- <br>
-  <div class="resume">
-    <div id="education">
-      <h3 style="float: left;">Experience</h3>
-    </div>
-    <div class="desc">
-      <h3>Dev Bootcamp</h3>
-      <h4 class="italic">Junior Web Developer &middot Sept 2014 - Present</h4><br>
-      <p> I'm currently looking for software development opportunities within ecommerce. 
+      <p>
+        DivvyUpTours is a Rails and JavaScript web app that lets users combine the adventure of a Divvy bike ride with sightseeing in Chicago.
       </p>
-      <hr>
-      <h3>Dev Bootcamp</h3>
-      <h4 class="italic">Web Development &middot March 2014 - August 2014</h4><br>
-      <p> Dev Bootcamp is an immersive 19-week training program for web developers, specializing in algorithmic Ruby and Rails. 
+      <p>
+        Using an API of the Divvy API, I was able to integrate real-time information on the nearest Divvy bike stations, along with the number of available bikes and bike docks. 
+      </p>
+    </div><!-- end of container div -->
+  </section>
 
-       Dev Bootcamp(DBC) was the next step in my career because I wanted to hone the skills that allow me to be both creative &amp logical. Throughout my time at DBC, I gathered the technical skills to become an effective front-end developer, engaged in engineering empathy &amp agile development, &amp most importantly, learned how to learn.
-      </p>
-      <hr>
-      <h3> The NPD Group</h3>
-      <h4 class="italic">Market Research Analyst &middot Oct. 2012 - Feb. 2014</h4>
-      <p>At NPD, I provided market analysis on brand positioning &amp consumer groups for the following clients: Dunkin' Donuts, Nestle, &amp McCain Foods. During my time there, I was able to exceed projected F'13 revenue goals by +9% by selling in over $500K in revenue
-      </p>
-    </div> 
- </div>
- <div style="clear: both;"></div>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-  <hr id="first_hr">
-   <div class="resume">
-    <div id="experience">
-      <h3 style="float: left;">Education</h3>
-    </div>
-    <div class="desc2">
-      <h3>Dev Bootcamp</h3>
-      <h4 class="italic">Web Development &middot March 2014 - August 2014</h4><br>
-      <p>Engaged in over 1000 hours of software development through pair programming &amp gained fluency in the above listed skills. 
-      </p>
-      <hr>
-      <h3> University of Chicago</h3>
-      <h4 class="italic">Pre-Med, Sociology | Honors B.A &middot Sept. 2008 - June 2014</h4>
-      <p>  Honors: Dean's List | Departmental Honors: Sociology | University of Chicago African Research Grant Recipient
-      </p>        
-    </div>
-  </div>
-  </div>
-   <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-  <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-  <br>
- <br>
- <br>
+  <section id="profile">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <h2 class="col-lg-12">Profile</h2>
+        </div>
+        <div class="row">
+          <img class="col-lg-4" src="images/JenniferPortrait-001.jpg" />
 
-<div style="display: block;"></div>
+          <div class="col-lg-4">
+            <h3>Skillset</h3> 
+            <ul id="skillset">
+              <li>
+                <strong>Ruby on Rails</strong>
+                <div class="skill">
+                  <span class="block on"></span>
+                  <span class="block on"></span>
+                  <span class="block on"></span>
+                  <span class="block off"></span>
+                </div>
+              </li>
+              <li>
+                <strong>HTML5 / CSS3</strong>
+                <div class="skill">
+                  <span class="block on"></span>
+                  <span class="block on"></span>
+                  <span class="block on"></span>
+                  <span class="block off"></span>
+                </div>
+              </li>
+              <li>
+                <strong>Javascript/jQuery/AJAX</strong>
+                <div class="skill">
+                  <span class="block on"></span>
+                  <span class="block on"></span>
+                  <span class="block on"></span>
+                  <span class="block off"></span>
+                </div>
+              </li>
+            </ul>
+            
+            <h3>Other Skills</h3>
+            <ul id="other-skills">
+              <li>APIs</li>
+              <li>ActiveRecord</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>Sinatra</li>
+              <li>Agile Web Development</li>
+              <li>Git / GitHub</li>
+              <li>RSpec</li>
+              <li>Capybara</li>
+              <li>Jasmine</li>
+            </ul>
+          </div><!--end of 2nd col -->
+    
+    <div class="col-lg-4">
+      <section id="summary">
+        <h3>About</h3>
+        <p> I like to work on software projects that have a consumer focus, especially those that focus on underserved consumer markets. Having a background in market research, I'm interested in creating software that users find useful &amp; enjoy using. 
+        </p>
+        <p>
+          I am currently open to positions as a junior developer.
+        </p>
+      </section>
+    <!-- </div> -->
+  </div><!--end of last col -->
+  </div><!--end of 2nd nested row -->
+</div><!-- end of first row -->
+</div><!-- end of container div -->
+  </section>
 
-<div class="CONTACT2" id="contact">
-  <div id="contact_1"> 
-    <a href="mailto:JennieO23@gmail.com"><img id="gmail" src="images/Gmail_Icon.png"></a>
+
+
+    <div class="resume row container">
+      <div id="education">
+        <h3 class="col-lg-4">Experience</h3>
+      </div>
+      <div class="col-lg-8">
+        <h3>Dev Bootcamp</h3>
+        <h4 class="italic">Junior Web Developer &middot Sept 2014 - Present</h4><br>
+        <p> I'm currently looking for junior software development opportunities. 
+        </p>
+        <hr>
+        <h3>Dev Bootcamp</h3>
+        <h4 class="italic">Web Development &middot March 2014 - August 2014</h4><br>
+        <p> Dev Bootcamp is an immersive 19-week training program for web developers, specializing in algorithmic Ruby and Rails. 
+
+         Dev Bootcamp(DBC) was the next step in my career because I wanted to hone the skills that allow me to be both creative &amp logical. Throughout my time at DBC, I gathered the technical skills to become an effective front-end developer, engaged in engineering empathy &amp agile development, &amp most importantly, learned how to learn.
+        </p>
+        <hr>
+        <h3> The NPD Group</h3>
+        <h4 class="italic">Market Research Analyst &middot Oct. 2012 - Feb. 2014</h4>
+        <p>At NPD, I provided market analysis on brand positioning &amp consumer groups for the following clients: Dunkin' Donuts, Nestle, &amp McCain Foods. During my time there, I was able to exceed projected F'13 revenue goals by +9% by selling in over $500K in revenue
+        </p>
+      </div><!--end of 2nd experience col -->
+   </div><!-- end of resume container row -->
+
+    <hr id="first_hr">
+     <div class="resume container row">
+      <div id="experience">
+        <h3 class="col-lg-4">Education</h3>
+      </div>
+      <div class="col-lg-8">
+        <h3>Dev Bootcamp</h3>
+        <h4 class="italic">Web Development &middot March 2014 - August 2014</h4><br>
+        <p>Engaged in over 1000 hours of software development through pair programming &amp gained fluency in the above listed skills. 
+        </p>
+        <hr>
+        <h3> University of Chicago</h3>
+        <h4 class="italic">Pre-Med, Sociology | Honors B.A &middot Sept. 2008 - June 2012</h4>
+        <p>  Honors: Dean's List | Departmental Honors: Sociology | University of Chicago African Research Grant Recipient
+        </p>        
+      </div><!-- end of 2nd column -->
+    </div><!-- end of resume container row -->
   </div>
-  <div id="contact_2">
-    <a href="http://www.linkedin.com/in/jenniferoseitutu/"><img id="linkedin" src="images/linkedin-logo-square2-webtreatsetc.png"></a>
-  </div>
-  <div id="contact_3">
-    <a href="https://github.com/JenTutu"><img id="github" src="images/Octocat.png"></a> 
- </div>
- <br>
- <div>
- <p>This site was created from scratch by Jennifer Oseitutu</p>
-  <p>All Rights Reserved &copy;</p>
-</div>
-</div>
- </body>
+
+  <!-- <div style="display: block;"></div> -->
+<!--   <div class="container-fluid"> -->
+<footer>
+  <ul class="contact"> 
+    <li id="gmail"> 
+      <a href="mailto:JennieO23@gmail.com">
+        <img class="icon" src="images/Gmail_Icon.png">
+      </a>
+    </li>
+    <li id="linkedin">
+      <a href="http://www.linkedin.com/in/jenniferoseitutu/">
+        <img class="icon" src="images/linkedin-logo-square2-webtreatsetc.png">
+      </a>
+    </li>
+    <li id="github">
+      <a href="https://github.com/JenTutu">
+        <img class="icon" src="images/Octocat.png">
+      </a>
+    </li>
+     <li>This site was created from scratch by Jennifer Oseitutu.</li>
+    <li>All Rights Reserved &copy;</li>
+  </ul>
+  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
-
