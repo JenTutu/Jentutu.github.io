@@ -34,7 +34,8 @@ h3 { font-size: 21px; }
 header#hero {
 	background-image: url('../images/macbook.jpg');
 	background-size: 100%;
-	background-position: center 15%;
+	background-position: center 15% 15%;
+	background-repeat: no-repeat;
 	padding: 0;
 	margin: 0px;
 	height: 458px;
