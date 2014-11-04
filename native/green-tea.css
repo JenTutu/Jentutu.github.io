@@ -1,0 +1,130 @@
+body {
+  background: url('../images/Tea-shop-Fukuoka-Japan.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.navbar-left {
+  /* display: block; */
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  color: white;
+  background: none repeat fixed 0% 0% rgba(0, 0, 0, 0.3); 
+  /* background: ? repeat attachment ? ? transparency review, internet having probs right now */
+  /* border-right: solid green;  will depend on the background chosen*/
+}
+
+#logo{
+background-image: url('http://www.sleepwarrior.com/wp-content/uploads/matcha-green-tea-set-450x297.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 150px;
+  width: 150px;
+  border-radius: 100% /* work on this */
+}
+
+nav li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  color: #F90;
+  margin: 1px 10px 10px 0px;
+  padding-left: 0px;
+  font-family: "Oswald",Arial,Helvetica,sans-serif;
+}
+
+#top {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 100.765px;
+  color: #535353;
+  /* text-decoration: underline; */
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+.img-responsive.pics{
+  height: 250px;
+  width: 400px;
+  /* border-radius: 50%; */
+  margin-top: 30px;
+}
+
+
+.about{
+  color: white;
+  /* text-align: center; */
+  /* display: block; */
+}
+
+h2{
+  text-transform: uppercase;
+}
+.about .textBox{
+  /* max-width: 380px; */
+  background-color: rgba(3, 101, 100, 0.4);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  border: solid ; 
+}
+
+.textBox p{
+  margin: 10px;
+  padding: 15px;
+}
+
+.benefits{
+  color: white;
+}
+
+.benefits .textBox{
+  /* max-width: 380px; */
+  background-color: rgba(3, 101, 100, 0.4);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  border: solid ; 
+}
+
+.history{
+  color: white;
+}
+
+.history .textBox{
+  /* max-width: 380px; */
+  background-color: rgba(3, 101, 100, 0.4);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  border: solid ; 
+}
+/*.recipeWrapper{
+  max-width: 900px;
+  max-height: 786px;
+}*/
+
+#latte{
+  /* max-width: 290px; */
+/*  background-color: rgba(3, 101, 100, 0.4);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  color: white;*/
+}
+
+.recipeText{
+  margin: 10px;
+  padding: 10px;
+    background-color: rgba(3, 101, 100, 0.4);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  color: white;
+}
+.specialty h2{
+  /* margin-top: 100px; */
+  color: white;
+}
+
+.coolPics h2{
+  /* margin-top: 100px; */
+  color: white;
+}
+
+.contact{
+  color: white;
+  background: black;
+}
